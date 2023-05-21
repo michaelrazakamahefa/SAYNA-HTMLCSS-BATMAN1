@@ -3,183 +3,205 @@
   src: url(../police/Rajdhani-Regular.ttf);
 }
 
-@font-face{
-  font-family:'Space grotesk';
-  src:url(../police/SpaceGrotesk-VariableFont_wght.ttf);
+@font-face {
+  font-family: 'Space grotesk';
+  src: url(../police/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
-:root{
-  --yellow-color:#FFFF00;
-  --yellow-light:#f8f184;
-  --blue-color:#19587d;
+:root {
+  --yellow-color: #FFFF00;
+  --yellow-light: #f8f184;
+  --blue-color: #19587d;
   --white-color: #ffff;
-  --gradient-white:#EDDEBF67;
-  --gradient-red:#89000978;
-  --black-color:#000;
-
+  --gradient-white: #EDDEBF67;
+  --gradient-red: #89000978;
+  --black-color: #000;
 }
-/* définition globale*/
-*{
-  margin:0;
-  padding:0;
+
+/* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-h1{
+/* Styles pour les titres de niveau 1 */
+h1 {
   font-family: 'rajdhani';
   font-size: 36px;
-  font-weight:400;
+  font-weight: 400;
 }
 
-button{
+/* Styles pour les boutons */
+button {
   font-family: 'rajdhani';
   font-size: 20px;
   font-weight: 400;
 }
 
-.container{
-  width:80%;
-  margin:0 auto;
+/* Conteneur principal */
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-body{
+/* Styles généraux pour le corps de la page */
+body {
   background-color: black;
   color: white;
-  font-family: 'Space Grotesk';
+  font-family: 'Space grotesk';
   font-weight: 400;
 }
 
-/* Designation de la navigation*/
-nav{
-  display:flex;
-  align-items:center;
+/* Styles pour la navigation */
+nav {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding:30px 0;
+  padding: 30px 0;
 }
 
-ul{
-  list-style : none;
+ul {
+  list-style: none;
 }
 
-nav ul a{
-  color:var(--white-color);
-  font-size:30px;
+nav ul a {
+  color: var(--white-color);
+  font-size: 30px;
   font-weight: 500;
-  font-family:'rajdhani'
+  font-family: 'rajdhani';
 }
 
-nav
-ul a:hover{
-  color:var(--yellow-color)
+nav ul a:hover {
+  color: var(--yellow-color);
 }
 
-/*Design de la partie Hero*/
-#hero{
+/* Styles pour la section d'en-tête (Hero) */
+#hero {
   background-image: url(../Illustrations/Bathome1.png);
-  background-size:cover;
+  background-size: cover;
   height: 800px;
-  background-position:top center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-color: #19587d;
-  background-size:cover;
+  background-size: cover;
 }
 
-.content{
-  display:flex;
-  justify-content:center;
-  flex-direction :column;
-  text-align:center;
-  width:60%;
-  margin:0 auto;
-  padding-top:150px;
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 150px;
 }
 
-#hero .titre{
-  margin:20px 0;
+#hero .titre {
+  margin: 20px 0;
 }
 
-.btn{
-  text-decoration:none;
-  color:var(--white-color);
-  font-size:22px;
-  padding:10px 40px;
-  margin-top:10px;
-  background:linear-gradient(
-    80deg,var(--gradient-white),var(--gradient-red)
-  );
-  box-shadow: var(--black-color) 15px 15px 50px; 
+.btn {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 22px;
+  padding: 10px 40px;
+  margin-top: 10px;
+  background: linear-gradient(80deg, var(--gradient-white), var(--gradient-red));
+  box-shadow: var(--black-color) 15px 15px 50px;
 }
 
 #hero .fleche {
-    display: block;
-    margin: 0 auto;
-    width: 80px;
-    margin-top: 250px;
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  margin-top: 250px;
 }
 
-.scroll{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  position:fixed;
-  right:80px;
-  top:230px;
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 80px;
+  top: 230px;
 }
 
-.scroll .social{
-  margin-top:14px;
-}
-/* design de la partie batman-personnage*/
-.batman-personnage{
-  display:flex;
-  justify-content:space-between;
+.scroll .social {
+  margin-top: 14px;
 }
 
-.nemesis_personnage{
-  display:flex;
-  justify-content:space-between;
+/* Styles pour la section des personnages de Batman */
+.batman-personnage {
+  display: flex;
+  justify-content: space-between;
 }
 
-#batman-cinema, #batman-justice-league{
-  margin-top:40px;
+.nemesis_personnage {
+  display: flex;
+  justify-content: space-between;
 }
 
-.aliees_personnage{
-  display:flex;
-  justify-content:space-between;
+#batman-cinema,
+#batman-justice-league {
+  margin-top: 40px;
 }
 
-.titre{
+.alliees_personnage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titre {
   text-transform: uppercase;
-  font-weight:bold;
+  font-weight: bold;
   margin: 30px 0;
 }
 
-#batman-cinema .description, #batman-justice-league.description{
-  margin-bottom:40px;
-  text-align:justify;
-  width:80%;
+#batman-cinema .description,
+#batman-justice-league.description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 80%;
 }
 
-.personnage-info{
-  text-align:center;
+.personnage-info {
+  text-align: center;
 }
 
-/* design de la partie multimédia*/
-#multimedia .slider-multimedia{
-  display:flex;
-  width:60%;
+/* Styles pour la section multimédia */
+#multimedia button {
+  position: relative;
+  top: 155px;
+  background-color: transparent;
+  border:none;
+}
+
+#multimedia button.right{
+  right:-85%;
+}
+
+#multimedia .slider-multimedia {
+  display: flex;
+  width: 60%;
   margin: 40px auto;
 }
 
-#multimedia .slider-image{
-  width:100%;
+#multimedia .slider-image {
+  width: 100%;
 }
 
-#multimedia .slider-content{
-  padding:15px;
-  background-color:  #727272;/*à revoir en gradient*/
+#multimedia .slider-content {
+  padding: 15px;
+  background-color: #727272; /* à revoir en gradient */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-#multimedia p{
-  font-size:14px ;
+
+#multimedia p {
+  font-size: 14px;
+}
+
+#multimedia .yellow{
+  color: var(--yellow-color);
 }
